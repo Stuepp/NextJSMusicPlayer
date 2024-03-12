@@ -5,6 +5,8 @@ export default nextConfig;
 */
 // next.config.js
 
+/** @type {import('next').NextConfig} */
+
 export default {
     webpack: (config, { isServer }) => {
         // Adiciona a configuração do loader para arquivos MP3

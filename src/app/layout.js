@@ -16,3 +16,14 @@ export default function RootLayout({ children }) {
   );
 }
 //{inter.className}
+/*
+DB
+
+CREATE TABLE Song (
+	SongID INT PRIMARY KEY
+	nome varchar(30),
+	song varchar(300)
+);
+
+
+*/
