@@ -24,14 +24,18 @@ function Formulario(){
         <main>
             <NavBar />
             <form  className="flex flex-col m-10 items-center bg-slate-700 rounded-lg">
-                <label htmlFor='todo' className="flex flex-col m-4">
-                    Song name:
-                    <input type='text' name='name' className="my-2 rounded-lg text-black outline outline-0 focus:border-2 focus:border-sky-300" required />
-                </label>
-                <label htmlFor='todo' className="flex flex-col m-4">
-                    Song:
-                    <input type='file' name='file'  accept='audio/' className="my-2" required />
-                </label>
+                <div className="w-full">
+                    <label htmlFor='name' className="flex flex-col m-4">
+                        Song name:
+                        <input id='name' type='text' name='name' className="my-2 rounded-lg text-black outline outline-0 focus:border-2 focus:border-sky-300" required />
+                    </label>
+                </div>
+                <div className="w-full">
+                    <label htmlFor='file' className="flex flex-col m-4">
+                        Song file:
+                        <input id='file' type='file' name='file'  accept='audio/' className="my-2" required />
+                    </label>
+                </div>
                 <SubmitButton />
             </form>
         </main>
